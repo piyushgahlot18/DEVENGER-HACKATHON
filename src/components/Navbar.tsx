@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Home, Bot, FileText, AlertCircle, FolderOpen, User,
-  Menu, X, Bell, Sun, Moon, Search, ChevronRight, Shield
+  Menu, X, Bell, Search, ChevronRight, Shield
 } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { mockNotifications } from '../data/mockData';
@@ -22,7 +22,7 @@ interface NavbarProps {
   onToggleDark: () => void;
 }
 
-export const Navbar = ({ darkMode, onToggleDark }: NavbarProps) => {
+export const Navbar = ({ }: NavbarProps) => {
   const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [showNotif, setShowNotif] = useState(false);
