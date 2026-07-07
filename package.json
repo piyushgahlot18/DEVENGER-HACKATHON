@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
+    "test": "node tests/hackathon-readiness.test.mjs && node tests/feature-coverage.test.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
